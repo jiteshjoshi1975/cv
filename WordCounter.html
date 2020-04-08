@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<HEAD>
+    <BODY style = "background-color: orange">
+</HEAD>
+        <H3>Enter your text in the given text area</H3>
+        <FORM name="wordcount">
+            <TEXTAREA row="12" name="wordcount2" cols="38" wrap="virtual"
+            style="color:pink; background-color:blue; font-size:20px"></TEXTAREA>
+            <br>
+            <INPUT type="button" value="Calculate words" onClick="countit()">
+            <INPUT type="text" name="wordcount3"  size="20">
+        </FORM>
+
+        <SCRIPT type="text/javascript">
+                function countit(){
+                var formcontent=document.wordcount.wordcount2.value 
+                formcontent=formcontent.split(" ")
+                document.wordcount.wordcount3.value=formcontent.length
+                }
+            </SCRIPT>
+            <VIDEO src = "100_2192.m4v" controls>watch video</VIDEO>
+
+    
+    </BODY>
+</HTML>
